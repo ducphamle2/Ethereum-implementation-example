@@ -1,0 +1,19 @@
+{
+  "name": "erc-20",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "ganache-cli": "^6.9.1",
+    "truffle-hdwallet-provider": "^1.0.17"
+  },
+  "author": "",
+  "license": "ISC"
+}
