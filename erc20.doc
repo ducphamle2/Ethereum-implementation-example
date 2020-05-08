@@ -1,0 +1,17 @@
+ERC20 tokens are contracts that implement the ERC20 standard. Operations handled by these contracts include getting the total supply and balance of tokens, and the methods used to transfer them.
+
+functions:
+totalSupply() public view returns (uint256): return the total token allocated in this supply regardless of owner
+balanceOf(address tokenOwner) public view returns (uint): return the token balance of owner
+transfer(address receiver, uint numTokens) public returns (bool): transfer directly from the owner token to the receiver
+
+When we transfer the token from the owner to the receiver through the third-party account, we use 3 functions:
+approve(address delegate, uint numTokens) public returns (bool): send token from the owner to the delegate account
+allowance(address owner, address delegate) public view returns (uint): return the number of token sent by the owner
+transferFrom(address owner, address buyer, uint numTokens) public returns (bool): the receiver withdraw the token from the delegate account
+
+Library SafeMath helps this contract guarantee that there is no overflow before executing
+
+
+
+

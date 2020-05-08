@@ -1,0 +1,21 @@
+1.Install python
+2.Install pip for python 3
+3.Set python 3 as default to use web3 library. In ubuntu I use this method and it works fine
+    Check python version on terminal: python --version
+    Get root user privileges: sudo su
+    Write down the root user password
+    Execute this command:
+        update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+4.To deploy web3 on testnet, I use metamask
+    Creat an account on metamask. Metamask will provide private key and account address in your account.
+    Change to Ropsten Testnet Network.
+5.Get Ropsten ether to test. You must have Ropsten ether to send transaction. 
+  https://faucet.ropsten.be/ or https://faucet.metamask.io/ will give you ether to test.
+6.Run Deploy.py on terminal: python Deploy.py
+    The output is the transaction hash and the contract address. Save this contract address. Now you can interact with your smart contract with this address
+7.Run SendTransaction.py on terminal to add data and build transaction.
+    The output is the transaction hash. You can check transaction status on this link: https://ropsten.etherscan.io/
+8.Run ReadData.py on terminal to see the information you have added to the contract in step 7. 
+     
+
+    
